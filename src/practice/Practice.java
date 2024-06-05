@@ -1,19 +1,15 @@
 package practice;
 
 public class Practice {
-	public static void email(String title, String address, String text) {
-		System.out.println(address + "に、以下のメールを送信しました");
-		System.out.println("件名:" + title);
-		System.out.println("本文:" + text);
+	public static double calcTriangleArea(double bottom, double height) {
+		return (bottom * height) / 2;
 	}
-	public static void email(String address, String text) {
-		System.out.println(address + "に、以下のメールを送信しました");
-		System.out.println("件名:無題");
-		System.out.println("本文:" + text);
+	public static double calcCircleArea(double radius) {
+		return (radius * radius) * 3.14;
 	}
 	
 	public static void main(String[] args) {
-//		email("メールのタイトル", "メールの宛先アドレス", "メールの本文");
-		email("メールの宛先アドレス", "メールの本文");
+		System.out.println("三角形の面積は" + calcTriangleArea(10.0, 5.0) + "cm2");
+		System.out.println("円の面積は" + calcCircleArea(5.0) + "cm2");
 	}
 }
