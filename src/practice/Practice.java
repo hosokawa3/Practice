@@ -1,15 +1,12 @@
 package practice;
 
 public class Practice {
-	public static void introduceOneself() {
-		String name = "湊祐輔";
-		int age = 22;
-		double tall = 169.9;
-		char animal = '辰';
-		System.out.println
-		("私の名前は" + name + "です。歳は" + age + "歳です。身長は" + tall + "cmです。十二支は" + animal + "です。");
+	public static void email(String title, String address, String text) {
+		System.out.println(address + "に、以下のメールを送信しました");
+		System.out.println("件名:" + title);
+		System.out.println("本文:" + text);
 	}
 	public static void main(String[] args) {
-		introduceOneself();
+		email("メールのタイトル", "メールの宛先アドレス", "メールの本文");
 	}
 }
