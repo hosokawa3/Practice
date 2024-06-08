@@ -1,15 +1,11 @@
 package practice;
 
 public class Practice {
-	public static double calcTriangleArea(double bottom, double height) {
-		return (bottom * height) / 2;
-	}
-	public static double calcCircleArea(double radius) {
-		return (radius * radius) * 3.14;
-	}
-	
 	public static void main(String[] args) {
-		System.out.println("三角形の面積は" + calcTriangleArea(10.0, 5.0) + "cm2");
-		System.out.println("円の面積は" + calcCircleArea(5.0) + "cm2");
+		int a = 10;
+		int b = 2;
+		int total = CalcLogic.tasu(a, b);
+		int delta = CalcLogic.hiku(a, b);
+		System.out.println("足すと" + total + "引くと" + delta);
 	}
 }
